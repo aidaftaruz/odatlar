@@ -1,5 +1,5 @@
 // Oflayn ishlash uchun: ilova fayllarini telefon xotirasida saqlaydi
-const V="odatlar-v2";
+const V="odatlar-v3";
 const FILES=["./","index.html","app.js","manifest.webmanifest","icons/icon-192.png","icons/icon-512.png",
  "fonts/caveat-700.woff2","fonts/nunito-400.woff2","fonts/nunito-600.woff2","fonts/nunito-700.woff2","fonts/nunito-800.woff2"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
